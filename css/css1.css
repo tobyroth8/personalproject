@@ -1,0 +1,280 @@
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+background-color: rgba(4, 16, 51);
+font-size: 18px;
+margin: 0;
+padding: 0;
+}
+
+h1{
+font-size: 50px;
+line-height: 1;
+text-align: center;
+}
+
+h2{
+font-size: 32px;
+line-height: 1.5;
+}
+
+nav ul{
+display: flex;
+}
+
+nav li{
+display: inline;
+padding-right: 20px;
+}
+
+nav{
+background-color: #ddd;
+padding: 5px 0;    
+text-align: left;   
+}
+
+header p{
+color: white;
+font-size: 20px;
+padding: 0 100px;
+text-align: center;
+}
+
+footer{
+background-color: rgba(4, 16, 51);
+color: white;
+padding-top: 10px;
+text-align: center;
+}
+
+footer p{
+margin: auto;
+text-align: center;
+padding-bottom: 25px;
+}
+
+.MERC-image{
+text-align: center;
+}
+
+
+
+nav a{
+color: black;
+font-weight: bold;
+text-decoration: none;
+}
+
+a:hover{
+text-decoration: underline;
+}
+
+nav a:active{
+  font-size: bold;
+  text-transform: uppercase;
+}
+
+
+
+.skip a{
+background: white;
+left: 0;
+padding: 6px;
+-webkit-transition: top 1s ease-out;
+transition: top 1s ease-out;
+z-index: 1;
+position: absolute;
+top: -40px;
+}
+
+.skip a:focus{
+top: 0;
+position: absolute;
+}
+
+
+
+*:focus{
+border: 2px solid;
+}
+
+.grid5{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+/* grid-template-rows: repeat(5, auto); */
+grid-row-gap: 15px;
+
+
+}
+
+
+
+header{
+
+background-attachment: fixed; /* Parallax effect */
+background-position: center; /* Parallax effect */
+background-size: cover; /* Parallax effect */
+color: rgba(4, 16, 51);
+height: 400px; /* Parallax effect */
+background-image: url("../Images/Ross.jpeg");
+overflow: scroll;
+background-repeat: no-repeat;
+grid-column: 1 / -1;
+grid-row: 1 / span 1;
+font-weight: bold;
+
+}
+
+
+
+.Structure-image{
+grid-column: 1 / -1;
+max-height: 700px;
+overflow: scroll;
+position: relative;
+grid-row: 2 / span 1;
+color: white;
+border: solid 10px black;
+}
+
+
+
+.Origins-image{
+grid-column: 1 / -1;
+max-height: 700px;
+overflow: scroll;
+grid-row: 4 / span 1;
+color: white;
+border: solid 10px black;
+}
+
+
+
+.Recruitment-image{
+grid-column: 1 / -1;
+max-height: 700px;
+overflow: scroll;
+grid-row: 6 / span 1;
+color: white;
+border: solid 10px black;
+
+}
+
+
+
+.Guide-image{
+grid-column: 1 / -1;
+max-height: 700px;
+overflow: hidden;
+align-items: center;
+grid-row: 8 / span 1;
+color: white;
+border: solid 10px black;
+
+}
+
+
+.text-block{
+background-color: rgba(255, 255, 255, .8);
+border: 10px solid black;
+padding: 5px;
+position: right;
+overflow: scroll;
+
+}
+
+#leadership{
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 2 / span 1;
+  color: white;
+  border: solid 10px black;
+  overflow: hidden;
+}
+
+#leadership h1{
+  text-align: left;
+}
+
+#leadership h2{
+  text-decoration: underline;
+
+}
+
+#Pupil_Class{
+display: grid;
+grid-column: 1 / -1;
+grid-row: 3 / span 1;
+color: white;
+border: solid 10px black;
+overflow: hidden;
+}
+
+#Pupil_Class h1{
+text-align: left;
+}
+
+#Pupil_Class h2{
+text-decoration: underline;
+
+}
+
+#application{
+  overflow: scroll;
+  display: grid;
+  grid-column: 1 / -1;
+  color: white;
+  border: solid 10px black;
+  
+}
+
+#application h1{
+  text-align: left;
+
+}
+
+#contact{
+  overflow: scroll;
+  display: grid;
+  grid-column: 1 / -1;
+  color: white;
+  border: solid 10px black;
+  
+}
+
+#contact h1{
+  text-align: left;
+
+}
+
+#contact a{
+  color: white;
+}
+
+
+
+
+/** Code for prefers reduced motion **/
+/* Make no changes below this line.
+ *************************************** 
+ */
+@media screen and (prefers-reduced-motion: reduce){
+/*Turn off scroll*/
+html{
+    scroll-behavior: auto; /* Removes scroll animation */
+}
+
+/*Turn off transition*/
+.skip a{
+  -webkit-transition: initial; /* sets to default setting */
+  transition: initial; /* sets to default setting */
+}
+
+/*Turn off parallax*/
+header{
+  background-attachment: initial;
+}
+}
