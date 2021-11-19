@@ -1,0 +1,649 @@
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+background-color: rgba(4, 16, 51);
+font-size: 18px;
+margin: 0;
+padding: 0;
+}
+
+h1{
+font-size: 50px;
+line-height: 1;
+text-align: center;
+}
+
+
+h2{
+font-size: 32px;
+line-height: 1.5;
+}
+
+nav ul{
+display: flex;
+}
+
+nav li{
+display: inline;
+padding-right: 20px;
+}
+
+nav{
+background-color: #FFFFFF;
+padding: 5px 0;    
+text-align: center;   
+}
+
+header p{
+color: #FFFFFF;
+font-size: 20px;
+padding: 0 100px;
+text-align: center;
+}
+
+footer{
+background-color: rgba(4, 16, 51);
+color: #FFFFFF;
+padding-top: 10px;
+text-align: center;
+}
+
+footer p{
+margin: auto;
+text-align: center;
+padding-bottom: 25px;
+}
+
+.MERC-image{
+text-align: center;
+}
+
+
+
+nav a{
+color: rgba(4, 16, 51);
+font-weight: bold;
+text-decoration: none;
+text-align: center;
+}
+
+a:hover{
+text-decoration: underline;
+}
+
+nav a.active{
+  text-decoration: underline;
+  color: #212121;
+}
+
+
+
+.skip a{
+background: #FFFFFF;
+left: 0;
+padding: 6px;
+-webkit-transition: top 1s ease-out;
+transition: top 1s ease-out;
+z-index: 1;
+position: absolute;
+top: -40px;
+}
+
+.skip a:focus{
+top: 0;
+position: absolute;
+}
+
+
+
+*:focus{
+border: 2px solid;
+}
+
+.grid5{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-row-gap: 15px;
+}
+
+.flex1{
+  display: flex;
+  align-items: left;
+  flex-wrap: wrap;
+  }
+
+
+
+header{
+background-attachment: fixed; /* Parallax effect */
+background-position: center; /* Parallax effect */
+background-size: cover; /* Parallax effect */
+color: #FFFFFF;
+height: 400px; /* Parallax effect */
+background: url("../Images/Ross.jpeg"), rgba(4, 16, 51);
+overflow: scroll;
+background-repeat: no-repeat;
+grid-column: 1 / -1;
+grid-row: 1 / span 1;
+font-weight: bold;
+
+}
+
+
+
+.Structure-image{
+grid-column: 1 / -1;
+max-height: 700px;
+overflow: scroll;
+position: relative;
+grid-row: 2 / span 1;
+color: #FFFFFF;
+border: solid 10px black;
+}
+
+
+
+.Origins-image{
+grid-column: 1 / -1;
+max-height: 700px;
+overflow: scroll;
+grid-row: 4 / span 1;
+color: #FFFFFF;
+border: solid 10px black;
+}
+
+
+
+.Recruitment-image{
+grid-column: 1 / -1;
+max-height: 700px;
+overflow: scroll;
+grid-row: 6 / span 1;
+color: #FFFFFF;
+border: solid 10px black;
+
+}
+
+
+
+.Guide-image{
+grid-column: 1 / -1;
+max-height: 700px;
+overflow: hidden;
+align-items: center;
+grid-row: 8 / span 1;
+color: #FFFFFF;
+border: solid 10px black;
+
+}
+
+
+.text-block{
+background-color: rgba(255, 255, 255, .8);
+border: 10px solid black;
+padding: 5px;
+position: right;
+overflow: scroll;
+
+}
+
+#leadership{
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 2 / span 1;
+  color: #FFFFFF;
+  border: solid 10px black;
+  overflow: hidden;
+}
+
+#leadership h1{
+  text-align: left;
+}
+
+#leadership h2{
+  text-decoration: underline;
+
+}
+
+#Pupil_Class{
+display: grid;
+grid-column: 1 / -1;
+grid-row: 3 / span 1;
+color: #FFFFFF;
+border: solid 10px black;
+overflow: hidden;
+}
+
+#Pupil_Class h1{
+text-align: left;
+}
+
+#Pupil_Class h2{
+text-decoration: underline;
+
+}
+
+#application{
+  overflow: scroll;
+  display: grid;
+  grid-column: 1 / -1;
+  color: #FFFFFF;
+  border: solid 10px black;
+  
+}
+
+#google{
+  width: 400px;
+  height: 1000px;
+}
+
+#application h1{
+  text-align: left;
+
+}
+
+#contact{
+  overflow: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: left;
+  color: #FFFFFF;
+  border: solid 10px black;
+  
+}
+
+#contact h1{
+  text-align: left;
+
+}
+
+#contact a{
+  color: #FFFFFF;
+}
+
+
+@media only screen and (min-width: 760px) {
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+
+  }  
+
+  .grid5{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 15px;
+    }
+    
+    .flex1{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      }
+    
+    
+    
+    header{
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center; /* Parallax effect */
+    background-size: cover; /* Parallax effect */
+    color: white;
+    height: 400px; /* Parallax effect */
+    background: url("../Images/Ross1.jpeg"), rgba(4, 16, 51);
+    overflow: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: bold;
+    
+    }
+
+    header p{
+      color: white;
+    }
+    
+    
+    
+    .Structure-image{
+      grid-column: 1 / 3;
+      max-height: 700px;
+      overflow: scroll;
+      position: relative;
+      grid-row: 2 / span 1;
+      color: #FFFFFF;
+      border: solid 10px black;
+      }
+
+    
+      
+      
+      
+      .Origins-image{
+      grid-column: 2 / 4;
+      max-height: 700px;
+      overflow: scroll;
+      grid-row: 4 / span 1;
+      color: #FFFFFF;
+      border: solid 10px black;
+      }
+
+      .Origins-image img{
+        width: 75%;
+      }
+      
+      
+      
+      .Recruitment-image{
+      grid-column: 1 / -1;
+      max-height: 700px;
+      overflow: scroll;
+      grid-row: 6 / span 1;
+      color: #FFFFFF;
+      border: solid 10px black;
+      
+      }
+
+      .Recruitment-image img{
+        width: 75%;
+      }
+      
+      
+      
+      .Guide-image{
+      grid-column: 1 / -1;
+      max-height: 700px;
+      overflow: scroll;
+      align-items: center;
+      grid-row: 8 / span 1;
+      color: #FFFFFF;
+      border: solid 10px black;
+      
+      }
+      
+      .Guide-image img{
+        width: 75%;
+      }
+    
+    .text-block{
+    background-color: rgba(255, 255, 255, .8);
+    border: 10px solid black;
+    padding: 5px;
+    position: right;
+    overflow: scroll;
+    
+    }
+
+    
+    #leadership{
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      color: #FFFFFF;
+      border: solid 10px black;
+      overflow: scroll;
+    }
+    
+    #leadership h1{
+      text-align: center;
+    }
+    
+    #leadership h2{
+      text-decoration: underline;
+    
+    }
+
+    #Toby{
+      grid-column: 1 / 2;
+      text-align: center;
+    }
+
+    #Toby img{
+      width: 300px;
+      height: 400px;
+    }
+
+    #Miles{
+      grid-column: 3 / 4;
+      text-align: center;
+    }
+
+    #Miles img{
+      width: 300px;
+      height: 400px;
+    }
+
+    #Alan{
+      grid-column: 5 / 7;
+      text-align: center;
+    }
+
+    #Alan img{
+      width: 300px;
+      height: 400px;
+    }
+
+
+    #Members{
+      color: white;
+    }
+
+
+    
+    #Pupil_Class{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: #FFFFFF;
+    border: solid 10px black;
+    }
+    
+    
+    #Pupil_Class h1{
+    text-align: center;
+    }
+    
+    #Pupil_Class h2{
+    text-decoration: underline;
+    
+    }
+
+  /* First Row */
+
+    #Chase{
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      text-align: center;
+    }
+
+    #Chase img{
+      width: 300px;
+      height: 400px;
+    }
+
+    #Josh{
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      text-align: center;
+    }
+
+    #Josh img{
+      width: 300px;
+      height: 400px;
+    }
+
+    #He{
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+      text-align: center;
+    }
+
+    #He img{
+      width: 300px;
+      height: 400px;
+    }
+
+/* Second Row */
+    #Lev{
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      text-align: center;
+    }
+
+    #Lev img{
+      width: 300px;
+      height: 400px;
+    }
+
+    #Julia{
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      text-align: center;
+    }
+
+    #Julia img{
+      width: 300px;
+      height: 400px;
+    }
+
+    #Lindsey{
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+      text-align: center;
+    }
+
+    #Lindsey img{
+      width: 300px;
+      height: 400px;
+    }
+
+
+    /* Third Row */
+
+    #Tristan{
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+      text-align: center;
+    }
+
+    #Tristan img{
+      width: 300px;
+      height: 400px;
+    }
+
+    #Raymond{
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+      text-align: center;
+    }
+
+    #Raymond img{
+      width: 300px;
+      height: 400px;
+    }
+
+    #Ashini{
+      grid-column: 3 / 4;
+      grid-row: 3 / 4;
+      text-align: center;
+    }
+
+    #Ashini img{
+      width: 300px;
+      height: 400px;
+    }
+
+    /* Fourth Row */
+
+    #Fallan{
+      grid-column: 1 / 2;
+      grid-row: 4 / 5;
+      text-align: center;
+    }
+
+    #Fallan img{
+      width: 300px;
+      height: 400px;
+    }
+
+    #Noah{
+      grid-column: 2 / 3;
+      grid-row: 4 / 5;
+      text-align: center;
+    }
+
+    #Noah img{
+      width: 300px;
+      height: 400px;
+    }
+
+
+    
+    #application{
+      overflow: scroll;
+      display: grid;
+      grid-column: 1 / -1;
+      color: #FFFFFF;
+      border: solid 10px black;
+      
+    }
+    
+    #google{
+      width: 400px;
+      height: 1000px;
+    }
+    
+    #application h1{
+      text-align: left;
+    
+    }
+    
+    #contact{
+      overflow: scroll;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: left;
+      color: #FFFFFF;
+      border: solid 10px black;
+      
+    }
+
+
+    
+    #contact h1{
+      text-align: left;
+    
+    }
+    
+    #contact a{
+      color: #FFFFFF;
+    }
+}
+
+
+
+/** Code for prefers reduced motion **/
+/* Make no changes below this line.
+ *************************************** 
+ */
+@media screen and (prefers-reduced-motion: reduce){
+/*Turn off scroll*/
+html{
+    scroll-behavior: auto; /* Removes scroll animation */
+}
+
+/*Turn off transition*/
+.skip a{
+  -webkit-transition: initial; /* sets to default setting */
+  transition: initial; /* sets to default setting */
+}
+
+/*Turn off parallax*/
+header{
+  background-attachment: initial;
+}
+}
